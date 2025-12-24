@@ -1,7 +1,20 @@
 {
   "name": "la-ui-components",
+  "version": "1.0.0",
   "type": "module",
   "private": true,
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "app/components/la/*.vue"
+  ],
+  "keywords": ["nuxt", "vue", "components", "ui", "la"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liena-dev-team/la-nuxt-ecom-core.git"
+  },
+  "author": "liena-dev-team",
+  "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
