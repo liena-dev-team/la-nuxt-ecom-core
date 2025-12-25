@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     { path: './components', pathPrefix: false }
   ],
   plugins: [
-    './plugins/*'
+    './app/plugins/*'
   ],
   devtools: { enabled: true },
   app: {
