@@ -7,7 +7,7 @@
 	"files": [
 		"index.js",
 		"components/",
-		"app/plugins/*"
+		"plugins/*"
 	],
 	"keywords": [
 		"nuxt",
