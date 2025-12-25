@@ -3,7 +3,7 @@ export default defineNuxtPlugin({
 	parallel: true,
 	async setup(nuxtApp) {
 		
-		class Faq {
+		class FaqTest {
 			constructor() { }
 
 			async getCategories() {
@@ -42,10 +42,10 @@ export default defineNuxtPlugin({
 			}
 		}
 
-		const faq = new Faq();
+		const faqTest = new FaqTest();
 		return {
 			provide: {
-				faq: faq,
+				faqTest: faqTest,
 			},
 		};
 	},
