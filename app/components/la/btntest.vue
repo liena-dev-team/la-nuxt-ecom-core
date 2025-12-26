@@ -10,6 +10,8 @@
 
 <script setup>
 
+
+import { ref, defineEmits } from 'vue'
 // Props
 const { is_disabled, is_loading } = defineProps({
 	is_disabled: {
@@ -21,5 +23,14 @@ const { is_disabled, is_loading } = defineProps({
 		default: false
 	},
 })
+
+const btnRef = ref(true)
+const emit = defineEmits(['click'])
+
+function onClick(e) {
+	btnRef.value = !btnRef.value
+	console.log("ref", btnRef.value);
+	emit('click', e)
+}
 
 </script>
